@@ -70,30 +70,60 @@ img{ max-width: 100%; max-height: 100%; }
 .head {
   width: 100%;
   float: left;
-  height: 160px;
+  /* height: 160px; */
+  position: absolute;
+
 }
 .inner {
   width: 100%;
   max-width: 2200px;
   overflow: hidden;
-  background-color: orange; 
+ /*  background-color: #171616;  */
+  border-bottom: 1px solid #4d4d4d;
   padding: 10px 0;
+background: -moz-linear-gradient(top,  #222222 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top,  #222222 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,  #222222 0%,rgba(0,0,0,0) 100%);
 }
 
-.head .logo { width: 220px; float: left; background-color: red; }
-.head .language { width: 47px; background-color: blue; }
-.head .serch { width: 47px; background: orchid;}
-.head .seemenu-order { width: 184px; background: palegreen;}
-.head .mainmenu { width: 740px; background: white; }
+.head .logo { width: 220px; float: left;}
+.head .language { width: 47px; }
+.head .serch { width: 47px;}
+.head .seemenu-order { width: 184px;}
+.head .mainmenu { width: 740px;}
 .head .logo, .language, .seemenu-order,.serch, .mainmenu { float: left; height: 100px; }
 
 
 .mainmenu {
-  padding: 25px 0;
+  padding: 30px 0;
   line-height: 40px;
-  background: white;
-
 }
+.mainmenu ul {
+  float: right;
+}
+.mainmenu ul li {
+  float: left;
+  height: 40px;
+  height: 40px;
+  line-height: 40px;
+  list-style: none;
+  position: relative;
+}
+.mainmenu ul li a {
+  width: 100%;
+  float: left;
+  height: inherit;
+  font-family: SF Pro Display;
+  padding: 0 24px;
+  line-height: inherit;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+
+
+
 
 
 .seemenu-order { 
@@ -124,36 +154,34 @@ img{ max-width: 100%; max-height: 100%; }
 }
 
 .language {
-  padding: 25px 0;
+  padding: 30px 0;
   line-height: 40px;
 }
 .language .icon-en {
     width: 40px;
     height: 40px;
-    margin: 5px 0;
     border-radius: 50%;
     border: solid #E4BC8A 2px;
-    /* background-image: url(../images/language.png);
-    background-repeat: no-repeat;
-    background-size: 16px auto; */
+}
+.language .icon-en img {
+  width: 16px;
+  margin: 10px 10px 16px 10px;
+}
+.serch .icon-serch img {
+  width: 16px;
+  margin: 10px 10px 16px 10px;
 }
 
-
 .serch {
-  padding: 25px 0;
+  padding: 30px 0;
   line-height: 40px;
 }
 .serch .icon-serch {
     width: 40px;
     height: 40px;
-    margin: 5px 0;
     float: right;
     border-radius: 50%;
     border: solid #E4BC8A 2px;
-   /*  background-color: rgba(var(--rgbWhite), 1.0);
-    background-image: url(../images/icon-flag.svg);
-    background-repeat: no-repeat;
-    background-size: 36px auto; */
 }
 
 
@@ -166,6 +194,8 @@ img{ max-width: 100%; max-height: 100%; }
    .content {
     width: 100%;
     float: left;
+    height:1700px;
+    background-color: #171616; 
 
   }
 
