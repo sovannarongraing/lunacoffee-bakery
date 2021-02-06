@@ -1,0 +1,94 @@
+@import url(default.css);
+
+body {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: var(--fContent);
+  color: rgba(var(--rgbDark), 0.8);
+  background-image: url(../images/bg-body.png);
+}
+body:lang(km){ font-size: 14px; line-height: 23px; }
+a,
+a:hover,
+a:active,
+a:focus {
+  outline: 0 !important;
+  text-decoration: none;
+}
+a[href=""] {
+  pointer-events: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--fTitle);
+  font-weight: 400;
+}
+h1{ font-size: 40px; line-height: 40px; }
+h2{ font-size: 32px; line-height: 32px; }
+h3{ font-size: 28px; line-height: 28px; }
+h4{ font-size: 24px; line-height: 24px; }
+h5{ font-size: 20px; line-height: 20px; }
+h6{ font-size: 16px; line-height: 16px; }
+
+p{ margin: 0 0 15px; }
+
+
+img{ max-width: 100%; max-height: 100%; }
+.clear{ clear: both; }
+.preload { overflow: hidden; }
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1320px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1080px;
+}
+
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: HEAD
+   --------------------------------------------------------------------------
+   ========================================================================== */
+.head {
+  width: 100%;
+  float: left;
+}
+
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: CONTENT
+   --------------------------------------------------------------------------
+   ========================================================================== */
+   .content {
+    width: 100%;
+    float: left;
+  }
+
+
+
+  /* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: FOOT
+   --------------------------------------------------------------------------
+   ========================================================================== */
+.foot {
+  width: 100%;
+  float: left;
+}

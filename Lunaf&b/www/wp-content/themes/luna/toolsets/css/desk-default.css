@@ -1,0 +1,184 @@
+@import url(default.css);
+
+body {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: var(--fContent);
+  color: rgba(var(--rgbDark), 0.8);
+  background-image: url(../images/bg-body.png);
+}
+body:lang(km){ font-size: 14px; line-height: 23px; }
+a,
+a:hover,
+a:active,
+a:focus {
+  outline: 0 !important;
+  text-decoration: none;
+}
+a[href=""] {
+  pointer-events: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--fTitle);
+  font-weight: 400;
+}
+h1{ font-size: 40px; line-height: 40px; }
+h2{ font-size: 32px; line-height: 32px; }
+h3{ font-size: 28px; line-height: 28px; }
+h4{ font-size: 24px; line-height: 24px; }
+h5{ font-size: 20px; line-height: 20px; }
+h6{ font-size: 16px; line-height: 16px; }
+
+p{ margin: 0 0 15px; }
+
+
+img{ max-width: 100%; max-height: 100%; }
+.clear{ clear: both; }
+.preload { overflow: hidden; }
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1600px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1270px;
+  background-color: pink;
+}
+/* .container { max-width: 1270px; padding: 0 40px; }
+.container-fluid { max-width: 1600px; padding: 0 40px; } */
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: HEAD
+   --------------------------------------------------------------------------
+   ========================================================================== */
+.head {
+  width: 100%;
+  float: left;
+  height: 160px;
+}
+.inner {
+  width: 100%;
+  max-width: 2200px;
+  overflow: hidden;
+  background-color: orange; 
+  padding: 10px 0;
+}
+
+.head .logo { width: 220px; float: left; background-color: red; }
+.head .language { width: 47px; background-color: blue; }
+.head .serch { width: 47px; background: orchid;}
+.head .seemenu-order { width: 184px; background: palegreen;}
+.head .mainmenu { width: 740px; background: white; }
+.head .logo, .language, .seemenu-order,.serch, .mainmenu { float: left; height: 100px; }
+
+
+.mainmenu {
+  padding: 25px 0;
+  line-height: 40px;
+  background: white;
+
+}
+
+
+.seemenu-order { 
+  padding: 30px 0;
+  line-height: 40px;
+  padding-left: 20px;
+  position: relative;
+}
+.seemenu-order::after {
+  content: '';
+  width: 1px;
+  top: 30%;
+  bottom: 30%;
+  left: 0px;
+  position: absolute;
+  background: #E4BC8A;
+}
+.seemenu-order button {
+  width: 150px;
+  border: none;
+  background: #E4BC8A;
+  height: 40px;
+  border-radius: 20px 5px 20px 20px;
+}
+.seemenu-order a {
+  font-size: 14px;
+  font-family: SF Pro Display;
+}
+
+.language {
+  padding: 25px 0;
+  line-height: 40px;
+}
+.language .icon-en {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 50%;
+    border: solid #E4BC8A 2px;
+    /* background-image: url(../images/language.png);
+    background-repeat: no-repeat;
+    background-size: 16px auto; */
+}
+
+
+.serch {
+  padding: 25px 0;
+  line-height: 40px;
+}
+.serch .icon-serch {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0;
+    float: right;
+    border-radius: 50%;
+    border: solid #E4BC8A 2px;
+   /*  background-color: rgba(var(--rgbWhite), 1.0);
+    background-image: url(../images/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-size: 36px auto; */
+}
+
+
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: CONTENT
+   --------------------------------------------------------------------------
+   ========================================================================== */
+   .content {
+    width: 100%;
+    float: left;
+
+  }
+
+
+
+
+
+  /* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: FOOT
+   --------------------------------------------------------------------------
+   ========================================================================== */
+.foot {
+  width: 100%;
+  float: left;
+}

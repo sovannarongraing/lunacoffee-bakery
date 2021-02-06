@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --fTitle: "Roboto Condensed", "Battambang";
+  --fContent: "Roboto Condensed", "Battambang";
+  --rgbDark: 0, 0, 0;
+  --rgbWhite: 255, 255, 255;
+  --rgbPrimary: 6, 121, 55;
+  --rgbSecondary: 5, 150, 60;
+  --rgbThirdary: 0,99,82;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0 !important;
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

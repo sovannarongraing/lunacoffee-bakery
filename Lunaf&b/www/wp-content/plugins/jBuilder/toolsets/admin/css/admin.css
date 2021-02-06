@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('../fonts/RobotoThin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../fonts/RobotoLight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root { 
+    --fTitle: "RobotoLight";
+    --fContent: "RobotoLight";
+    --jMenuWidth: 280px;
+    --jToolWidth: 59px;
+    --rgbDark: 0,0,0;
+    --rgbWhite: 255,255,255;
+}
+
+/* Legacy */
+.admin-color-fresh{
+    --rgbBody: #E4E5E6;
+    --rgbContent: #3C4B64;
+    --rgbWidget: #FFFFFF;
+    --rgbCard: #FFFFFF;
+    --rgbTable: #DEE2E6;
+    --rgbPagination: #FFFFFF;
+    --rgbPrimary: #004E85;
+    --rgbSecondary: #265F97;
+    --rgbTertiary: #BFD0E0;
+    --rgbQuaternary: #BFD0E0;
+}
+
+/* Regency */
+.admin-color-regency{
+  --rgbBody: #f1e9de;
+  --rgbContent: #2b2622;
+  --rgbWidget: #FFFFFF;
+  --rgbCard: #ECE0D1;
+  --rgbTable: #bcb3a7;
+  --rgbPagination: #f7f2ec;
+  --rgbPrimary: #634832;
+  --rgbSecondary: #77583e;
+  --rgbTertiary: #EEEEEE;
+  --rgbQuaternary: #967259;
+}
+
+/* Dracula */
+.admin-color-dracula {
+  --rgbBody: #212121;
+  --rgbContent: #86939E;
+  --rgbWidget: #FFFFFF;
+  --rgbCard: #272C33;
+  --rgbTable: #30384B;
+  --rgbPagination: #22262C;
+  --rgbPrimary: #272C33;
+  --rgbSecondary: #30384B;
+  --rgbTertiary: #86939E;
+  --rgbQuaternary: #0069B3;
+}
+
+
+html, body{
+    padding: 0px !important;
+    font-size: 16px !important;
+    font-family: var(--fContent) !important;
+    color: var(--rgbContent);
+    background-color: var(--rgbBody);
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: NAVIGATOR
+   --------------------------------------------------------------------------
+   ========================================================================== */
+#adminmenuwrap,
+#adminmenuwrap #adminmenu{
+    width: var(--jMenuWidth) !important;
+    margin-top: 0 !important;
+    left: 60px !important;
+    background-color: var(--rgbPrimary) !important;
+}
+#adminmenuwrap #adminmenu{ margin-top: 110px !important; }
+#adminmenuwrap #adminmenu > li{ 
+    width: var(--jMenuWidth) !important;
+    background-color: transparent !important; 
+    border-bottom: solid var(--rgbSecondary) 1px !important; 
+}
+#adminmenuwrap #adminmenu > li:hover > a, 
+#adminmenuwrap #adminmenu > li.current > a, 
+#adminmenuwrap #adminmenu > li.wp-has-current-submenu > a{ background-color: rgba(var(--rgbDark), 0.1) !important; }
+#adminmenuwrap #adminmenu > li.wp-has-current-submenu > a::after{ border-right-color: var(--rgbBody) !important; border-width: 8px !important; margin-top: -8px !important; }
+#adminmenuwrap #adminmenu > li > a{
+    font-size: 16px !important;
+    height: auto !important;
+    padding: 8px 25px !important;
+    color: var(--rgbTertiary) !important;
+    background-color: transparent !important;
+}
+#adminmenuwrap #adminmenu > li > .wp-submenu{
+    width: var(--jMenuWidth) !important;
+    padding: 20px 0 !important; 
+    border-top: solid var(--rgbSecondary) 1px !important; 
+    background-color: rgba(var(--rgbDark), 0.2) !important;
+}
+#adminmenuwrap #adminmenu > li.wp-menu-separator{ display: none !important; }
+#adminmenuwrap #adminmenu > li.wp-has-current-submenu > .wp-submenu{ 
+    top: 0 !important; 
+    position: static !important; 
+    box-shadow: none !important; 
+}
+#adminmenuwrap #adminmenu > li.opensub > .wp-submenu{
+    width: calc(var(--jMenuWidth) - 40px) !important;
+    left: var(--jMenuWidth) !important;
+    background-color: var(--rgbSecondary) !important;
+}
+#adminmenuwrap #adminmenu > li > .wp-submenu > li > a{ padding: 3px 0 3px 30px !important; }
+#adminmenuwrap #adminmenu > li > .wp-submenu .wp-menu-image{ position: static !important; width: 40px !important; text-align: left !important; }
+#adminmenuwrap #adminmenu > li > .wp-submenu .wp-menu-image::before{ text-align: left !important; margin-left: 3px !important; font-size: 24px; }
+#adminmenuwrap #adminmenu > li > .wp-submenu .wp-menu-name{ left: 0 !important; position: static !important; padding-left: 10px !important; }
+#adminmenuwrap #adminmenu > li > .wp-submenu > li > a::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 3px 8px 3px 0;
+    border: solid var(--rgbQuaternary) 1px;
+    border-radius: 50%;
+} 
+#adminmenuwrap #adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover::after{ border-right-color: var(--rgbSecondary) !important; }
+#adminmenuwrap #adminmenu > li > .wp-submenu > li.wp-menu-separator > a::before,
+#adminmenuwrap #adminmenu > li > .wp-submenu > li.wp-menu-separator > a > hr{ display: none !important; }
+#adminmenuwrap #adminmenu > li > .wp-submenu > li.wp-menu-separator > a{
+    border-top: dashed rgba(var(--rgbWhite), 0.4) 1px !important;
+    padding: 0 !important;
+    margin: 10px 20px !important;
+}
+
+
+
+
+/* Tools */
+#adminmenuback{
+    width: calc(var(--jMenuWidth) + 60px) !important;
+    margin-top: 0px !important;
+    background-color: var(--rgbPrimary) !important;
+}
+#adminmenuwrap::before{
+    content: '';
+    width: var(--jToolWidth);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-right: solid var(--rgbSecondary) 1px !important;
+    background: url(../images/bar.png) top repeat-x;
+    background-color: var(--rgbPrimary) !important;
+}
+#adminmenuwrap::after{
+    content: '';
+    width: var(--jMenuWidth);
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: solid var(--rgbSecondary) 1px;
+    background-color: rgba(var(--rgbDark), 0.3) !important;
+    background-image: url(../images/lunacoffee&bakery.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 80px;
+}
+#adminmenuwrap #adminmenu > li#collapse-menu::before{
+    content: 'Amory © 2020, All rights reserved.';
+    width: calc(var(--jMenuWidth) - 40px);
+    font-size: 12px;
+    padding: 16px 20px;
+    float: left;
+    position: fixed;
+    bottom: 0;
+    cursor: default !important;
+    color: var(--rgbTertiary) !important
+}
+#adminmenuwrap #adminmenu > li#collapse-menu button{
+    width: var(--jToolWidth) !important;
+    height: calc(var(--jToolWidth) + 1px) !important;
+    top: 0px !important;
+    left: 0px !important;
+    position: fixed !important;
+    text-indent: -999px !important;
+    overflow: hidden !important;
+    z-index: 9999 !important;
+    background-image: url(../images/bars.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 19px 22px !important;
+}
+#wpadminbar{ margin-top: -200px !important; }
+#wp-admin-bar-my-account .ab-sub-wrapper{ display: block !important; }
+#wp-admin-bar-my-account ul{ padding: 0px !important  }
+#wp-admin-bar-my-account ul li:not(#wp-admin-bar-logout){ display: none !important; }
+#wp-admin-bar-my-account ul li#wp-admin-bar-logout a{
+    position: fixed !important;
+    display: block !important;
+    min-width: auto !important;
+    width: 60px !important;
+    height: 60px !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    padding: 0px !important;
+    text-indent: -999px !important;
+    overflow: hidden !important;
+    background-image: url(../images/power-off.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 22px !important;
+}
+
+
+
+
+/* Folded */
+.folded #adminmenuwrap{ left: -221px !important; }
+.folded #adminmenuwrap li.wp-has-current-submenu > .wp-submenu .wp-submenu-head{ display: none !important; }
+.folded #adminmenuback{ width: calc(var(--jToolWidth) + 1px) !important; }
+.folded #wpcontent{ margin-left: calc(var(--jToolWidth) + 1px) !important; }
+
+
+/* Magic Here */
+#adminmenuwrap,
+#adminmenuback,
+#wpcontent,
+.folded #adminmenuwrap,
+.folded #adminmenuback,
+.folded #wpcontent{
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -moz-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: CONTENT
+   --------------------------------------------------------------------------
+   ========================================================================== */
+#wpcontent{
+    padding: 0 0 0 20px !important;
+    margin-left: calc(var(--jMenuWidth) + 60px) !important;
+}
+#wpcontent #screen-meta-links{ margin: 0 35px 0 0 !important;}
+#wpcontent .wrap{ padding: 18px 15px !important; }
+#wpcontent .wrap h1.wp-heading-inline{ font-size: 29px !important; }
+#wpcontent #wp-content-editor-tools{ background-color: transparent !important; }
+#wpcontent table.form-table{ margin-top: 0;}
+#wpcontent table.form-table th,
+#wpcontent table.form-table td,
+#wpcontent table.form-table th,
+#wpcontent table.form-table td{ padding: 8px 0 0 0; height: 20px; color: var(--rgbContent); }
+#wpcontent table.form-table th{ width: 240px !important; }
+#wpcontent table.form-table th label{ padding-top: 18px; }
+#wpcontent table.form-table input[type="text"].small-text{ width: 100px;}
+#wpcontent table.form-table input[type="text"],
+#wpcontent table.form-table input[type="password"],
+#wpcontent table.form-table input[type="email"],
+#wpcontent table.form-table input[type="url"],
+#wpcontent table.form-table select{
+    height: 35px;
+    font-size: 12px;
+    padding: 0 10px;
+    width: 400px;
+}
+
+
+
+.widefat .qtranxs-lang-switch{
+    padding: 10px !important;
+    font-size: 14px !important;
+}
+
+
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: CONTENT
+   --------------------------------------------------------------------------
+   ========================================================================== */
+#wpfooter{ margin-left: calc(var(--jMenuWidth) + 60px) !important; }
+
+
+
+/* ==========================================================================
+   --------------------------------------------------------------------------
+   SECTION: USELESS
+   --------------------------------------------------------------------------
+   ========================================================================== */
+ /* Admin Bar */
+#your-profile h2,
+#your-profile h3,
+#your-profile .user-rich-editing-wrap,
+#your-profile .user-syntax-highlighting-wrap,
+#your-profile .user-comment-shortcuts-wrap,
+#your-profile .user-admin-bar-front-wrap,
+#your-profile .user-description-wrap,
+#your-profile .user-profile-picture,
+#your-profile .qtranxs-form-table,
+#your-profile .user-language-wrap,
+#your-profile .user-url-wrap,
+#createuser .user-language-wrap,
+.qtranxs-lang-switch-wrap li:only-child,
+.qtranxs-lang-switch-wrap:empty,
+#post-body-content > .qtranxs-lang-switch-wrap:not(:first-child),
+#qtranxs-meta-box-lsb,
+#privacy-policy-page-warning,
+.acf-admin-toolbar,
+.notice-warning,
+#welcome-panel, /* Contact Form 7 */
+.alm-err-notice,  /* ALM */
+.alm-admin-notice /* ALM */
+{ display: none !important; }
+
+
+
+
+    
+	
+	
+
+
+    #your-profile #email-description{ margin: 10px 0 20px; }
+	#your-profile .color-option{ width: 15%; max-width: 120px; padding: 5px 10px 10px; background-color: rgba(var(--rgbWhite), 0.5); }
+	#your-profile .color-option.selected{ background-color: rgba(var(--rgbDark), 0.1); }
+	#your-profile .color-option label{ width: 100%; }
+    #your-profile .color-option:nth-child(4),
+    #your-profile .color-option:nth-child(5),
+    #your-profile .color-option:nth-child(6),
+    #your-profile .color-option:nth-child(7),
+    #your-profile .color-option:nth-child(9),
+    #your-profile .color-option:nth-child(10),
+    #your-profile .color-option:nth-child(11),
+    #your-profile .color-option:nth-child(13)
+    { display: none !important; }
