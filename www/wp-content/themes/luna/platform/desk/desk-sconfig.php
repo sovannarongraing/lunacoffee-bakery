@@ -7,6 +7,6 @@
 <?php /* JS Config */ ?>
 <script type="text/javascript">
     $(document).ready(function(){
-        
+        $("body").removeClass('preload');
     });
 </script>
