@@ -1,0 +1,59 @@
+.section {
+   padding: 100px 0;
+   width: 100%;
+   float: left;
+   position: relative;
+}
+.most-popular {
+   width: 100%;
+   float: left;
+   background-color: pink;
+   height: 750px;
+}
+.content .title {
+   width: 100%;
+   margin: 0 0 40px;
+   line-height: 40px;
+
+}
+.title h3 {
+   font-size: 50px;
+}
+p { font-size: 18px; }
+
+.drink-list {
+   width: 100%;
+   float: left;
+   background-color: yellow;
+}
+
+.drink {
+   width:295px;
+   background-color: white;
+   height: 444px;
+   border-radius: 9px;
+float: left;
+   position: relative;
+}
+
+
+
+
+
+
+.drink-list .drink .overlay {
+   top: 50%;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   position: absolute;
+   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,78,133,0.3) 50%, rgba(0,67,133,0.9) 90%);
+}
+h5 {
+   left: 18px;
+   bottom: 45px;
+   position: absolute;
+   margin: 0 90px 0 0 !important;
+   font-size: 20px !important;
+   color: rgba(var(--rgbWhite), 1.0) !important;
+}

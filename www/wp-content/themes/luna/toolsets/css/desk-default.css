@@ -50,12 +50,13 @@ img{ max-width: 100%; max-height: 100%; }
   width: 100%;
   margin: 0 auto;
   position: relative;
+  background-color: orange;
   max-width: 1600px;
 }
 .container {
   width: 100%;
   margin: 0 auto;
-/*   position: relative; */
+/*position: relative; */
   max-width: 1270px;
 }
 /* .container { max-width: 1270px; padding: 0 40px; }
@@ -194,8 +195,8 @@ img{ max-width: 100%; max-height: 100%; }
 .content {
   width: 100%;
   float: left;
-  height:1700px;
-  background-color: black;
+/*   height:1700px;
+  background-color: black; */
 }
 
 
