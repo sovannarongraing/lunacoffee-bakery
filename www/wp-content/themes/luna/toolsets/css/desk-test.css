@@ -1,4 +1,4 @@
-.section {
+/* .section {
    padding: 100px 0;
    width: 100%;
    float: left;
@@ -7,7 +7,7 @@
 .most-popular {
    width: 100%;
    float: left;
-   background-color: pink;
+   background-color: #EEEEEE;
    height: 750px;
 }
 .content .title {
@@ -16,44 +16,99 @@
    line-height: 40px;
 
 }
-.title h3 {
-   font-size: 50px;
-}
-p { font-size: 18px; }
+
+p { font-size: 18px; color: #050505; }
 
 .drink-list {
    width: 100%;
    float: left;
-   background-color: yellow;
 }
 
 .drink {
-   width:295px;
+   width:290px;
    background-color: white;
    height: 444px;
    border-radius: 9px;
-float: left;
+   float: left;
+   margin-left:30px;
    position: relative;
 }
-
-
-
-
-
+.drink:nth-child(1) {
+   margin-left: 0;
+}
 
 .drink-list .drink .overlay {
    top: 50%;
    bottom: 0;
    left: 0;
+   border-radius: 9px;
    right: 0;
    position: absolute;
-   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,78,133,0.3) 50%, rgba(0,67,133,0.9) 90%);
-}
-h5 {
+   background-image: linear-gradient(#ffffff, #321E12);}
+.overlay h5 {
    left: 18px;
    bottom: 45px;
    position: absolute;
-   margin: 0 90px 0 0 !important;
-   font-size: 20px !important;
-   color: rgba(var(--rgbWhite), 1.0) !important;
+
+}
+ */
+.title h3 {
+   font-size: 50px;
+   color: #050505;
+}
+h4 {
+   font-size: 36px;
+   color: #050505;
+}
+.mobie-app {
+   background-color: #A38147;
+   width: 100%;
+   height: 560px;
+   float: left;
+   margin: 0;
+}
+
+
+
+.mobie-app .thumbnail {
+   width: 50%;
+   float: left;
+   background: orange;
+}
+
+.mobie-app .right {
+   width: 50%;
+   float: right;
+   background: pink;
+   padding-left: 75px;
+}
+.mobie-app .right .description {
+   width: 510px;
+}
+.description .link {
+   width: 368;
+   background: lightgreen;
+   height: 120px;
+   padding:10px;
+}
+.description .link .qrcode {
+   width: 100px;
+   height: 100px;
+   float: left;
+   background: #707070;
+   border-radius: 10px;
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+.description .link .t {
+   width: 22px;
+}
+.description .link .icon {
+   width: 100px;
+   height: 100px;
+   float: left;
+   background: #707070;
+   border-radius: 100px;
+   background-repeat: no-repeat;
+   background-size: 100%;
 }
