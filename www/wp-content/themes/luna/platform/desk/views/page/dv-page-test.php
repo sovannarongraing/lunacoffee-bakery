@@ -20,16 +20,19 @@
          </div>
         
       </div>
-   </div> -->
+   </div>
+
 
    <div class="mobie-app">
 
       <div class="thumbnail">
          <div class="background">
-            background
+            <svg xmlns="http://www.w3.org/2000/svg" width="342.4" height="640" viewBox="0 0 342.4 640">
+               <path id="Path_371" data-name="Path 371" d="M0,640c160.5-48.7,277.4-193.5,294.8-361.7C308.9,142,253,35.5,232.4,0h110V640Z" transform="translate(0)" fill="#a38147"/>
+            </svg>
          </div>
       </div>
-
+  
       <div class="right">
          <div class="description">
             <h4>Download our app for free!</h4>
@@ -37,15 +40,36 @@
                Use this app to personalize your experience and benefit of the easiest, 
                fastest way to order your favorite coffee and bakery.</p>
             <div class="link">
-               <a class="qrcode">d</a>
-               <a class="t">d</a>
-               <a class="icon android">d</a>
-               <a class="icon ios">d</a>
+               <a class="qrcode"></a>
+               <a class="t"></a>
+               <a class="icon android"></a>
+               <a class="icon ios"></a>
             </div>
          </div>
       </div>
    </div>
-
+ -->
+   <div class="section new-promotion">
+      <div class="container">
+         <div class="title">
+            <h3>News/Promotion</h3>
+            <p>The most order and recommended by our customers</p>
+         </div>
+         <div class="row">
+            <div class="col-4 list">
+               <div class="inner"> 
+                  d
+               </div>
+            </div>
+            <div class="col-4 list">
+               d
+            </div>
+            <div class="col-4 list">
+               d
+            </div>
+         </div>
+      </div>
+   </div>
 </div>
-
+ 
 

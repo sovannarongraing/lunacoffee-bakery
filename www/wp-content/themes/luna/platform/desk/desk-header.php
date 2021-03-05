@@ -1,13 +1,13 @@
 <div class="head">
-    <!-- <div class="inner">
+    <div class="inner">
         <div class="container">
             <div class="logo">
                 <img src="<?php bloginfo('template_url');?>/toolsets/images/lunacoffee&bakery.png"  alt="" />
-                logo
+<!--                 logo -->
             </div>
 
             <div class="mainmenu">
-                menu
+<!--                 menu -->
                 <?php wp_nav_menu( array( 'theme_location' => 'mainMenu' ) ); ?>
             </div>
 
@@ -27,5 +27,5 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 </div> 
