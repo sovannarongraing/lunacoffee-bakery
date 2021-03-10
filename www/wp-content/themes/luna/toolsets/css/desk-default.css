@@ -57,6 +57,7 @@ img{ max-width: 100%; max-height: 100%; }
   margin: 0 auto;
 /*position: relative; */
   max-width: 1270px;
+  padding: 0 20px;
 }
 /* .container { max-width: 1270px; padding: 0 40px; }
 .container-fluid { max-width: 1600px; padding: 0 40px; } */
@@ -80,7 +81,7 @@ img{ max-width: 100%; max-height: 100%; }
 .head .mainmenu { width: 740px;}
 .head .logo, .language, .seemenu-order,.serch, .mainmenu { float: left; height: 100px; }
 
-.inner {
+.head .inner {
   width: 100%;
   max-width: 2200px;
   overflow: hidden;
@@ -210,4 +211,52 @@ img{ max-width: 100%; max-height: 100%; }
 .foot {
   width: 100%;
   float: left;
+}
+.foot .inner {
+  font-size: 18px;
+  line-height: 20px;
+  position: relative;
+  height: 847px;
+  /* color: rgba(var(--rgbWhite), 1.0);
+  background-color: rgba(var(--rgbPrimary), 1.0);
+  border-top: solid rgba(var(--rgbSecondary), 1.0) 15px; */
+  background: lightgray;
+}
+.foot .inner::before {
+  content: '';
+  width: 920px;
+  top: 0;
+  bottom: 0;
+  left: 26%;
+  border-top: 1px solid #707070;
+  position: absolute;
+}
+.foot .fullwidth {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.foot .section {
+  padding: 60px 0px 100px 0px;
+}
+.foot .social {
+  width: 100%;
+  float: left;
+  height: 217px;
+  background: pink;
+ /*  padding: 60px 0; */
+}
+
+.detail .section  {
+  width: 100%;
+  float: left;
+  height: 630px;
+  background: #171616;
+}
+.section .overview {
+  width: 100%;
+  text-align: center;
+}
+.overview img {
+  max-height: 80px;
 }

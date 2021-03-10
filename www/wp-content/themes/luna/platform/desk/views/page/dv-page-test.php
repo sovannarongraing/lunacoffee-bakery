@@ -1,6 +1,6 @@
 <div class="content home">
 
-   <!-- <div class="section most-popular">
+   <div class="section most-popular">
       <div class="container-fluid ">
          <div class="container">
             <div class="title">
@@ -32,7 +32,7 @@
             </svg>
          </div>
       </div>
-  
+   
       <div class="right">
          <div class="description">
             <h4>Download our app for free!</h4>
@@ -48,28 +48,37 @@
          </div>
       </div>
    </div>
- -->
+
+
    <div class="section new-promotion">
       <div class="container">
          <div class="title">
             <h3>News/Promotion</h3>
-            <p>The most order and recommended by our customers</p>
+            <p>Get the latest update of our offer and recipes.</p>
          </div>
          <div class="row">
-            <div class="col-4 list">
-               <div class="inner"> 
-                  d
+            <?php for($i=0; $i<3; $i++){ ?>
+               <div class="col-4 list">
+                  <div class="inner"> 
+                     <div class="thumbnail">
+
+                        image
+                     </div>
+                     <div class="see-detail">
+                        <a href="#" class="btn-seedetail">See Detail</a>
+                     </div>
+                     <div class="description">
+                        <p>experience and benefit of the easiest, 
+                           to order favorite.</p>
+                     </div>
+                  </div>
                </div>
-            </div>
-            <div class="col-4 list">
-               d
-            </div>
-            <div class="col-4 list">
-               d
-            </div>
+            <?php } ?>
          </div>
       </div>
    </div>
+
+
 </div>
  
 

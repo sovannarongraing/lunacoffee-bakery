@@ -37,10 +37,10 @@ function jCompose($index){
 	 *	);
 	 */
 
-	$args['page'] = array(
+	/* $args['page'] = array(
 		array( 'b' => 1, 'n' => 'Invoice', 's' => 'Invoice', 'r' => false, 'i' => false)
 	);
- 
+  */
 
 	$args[$index] = isset($args[$index])?$args[$index]:array();
 	return $args[$index];

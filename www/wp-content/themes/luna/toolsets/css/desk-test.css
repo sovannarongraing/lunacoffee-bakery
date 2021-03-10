@@ -28,7 +28,7 @@ p { font-size: 18px; color: #050505; }
    width: 100%;
    float: left;
 }
-
+   
 .drink {
    width:290px;
    background-color: white;
@@ -140,16 +140,64 @@ p { font-size: 18px; color: #050505; }
    background-size: 100%;
 }
 
-.container {
-   background-color: pink;
-}
+
+
+
+/* new/promotion */
+
 .new-promotion {
    width: 100%;
    float: left;
-   height: 620px;
+   height: 726px;
    background-image: url(../images/b-promotion.png);
 }
-.new-promotion p {
-   border: 1
-
+.new-promotion .inner {
+   background-color: #EEEEEE;
+   width: 100%;
+   border-radius: 9px;
+   float: left;   
+   max-width: 403px;
+   height: 439px;
+}
+.new-promotion .thumbnail {
+   width: 100%;
+   float: left;
+   position: relative;
+   height: 269px;
+   border-radius: 9px 9px 0px 0px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../images/1.jpg);
+}
+.new-promotion .see-detail {
+   text-align: center;
+   width: 100%;
+   float: left;
+}
+.new-promotion .btn-seedetail {
+   width: 120px;
+   height: 30px;
+   background-color: #E4BC8A;
+   line-height: 30px;
+   text-align: center;
+   border: none !important;
+   border-radius: 15px;
+   font-size: 14px;
+   display: inline-block;
+   top: 58%;
+   color: #222222;
+   bottom: 0;
+   left: 34%;
+   right: 0;
+   position: absolute;
+}
+.new-promotion .description {
+   width: 100%;
+   float: left;
+   padding: 36px 65px;
+}
+.new-promotion .description p {
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
 }
